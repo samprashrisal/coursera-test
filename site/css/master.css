@@ -1,6 +1,5 @@
-/* Cascading stylesheet for the website */
 
-/* Text inside these asterisks and slashes are comments for human */
+@import url('')
 
   a {
     /* set the text color to blue here */
@@ -8,7 +7,7 @@
     color:blue; /* This means we do not want hyperlinks to be underlined */
   }
 
-  a:hover {
+  p>a:hover {
     /* set the text color to red here */
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
     color:red;
@@ -67,3 +66,22 @@
     margin: 0 auto;
     text-align: left;
   }
+  button {
+  margin: 0 auto 0;
+  padding: 20px 25px;
+  background-color: beige;
+  color: #075AAB;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #075AAB;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  outline: none;
+}
+button:hover {
+  transition: 0.4s;
+  text-decoration: underline;
+  background-color: #075AAB;
+  color: beige;
+}
