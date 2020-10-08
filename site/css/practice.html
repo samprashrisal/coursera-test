@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My form</title>
+	<style>
+		body {
+            background: hsl(45,80%,80%,0.8)
+		}
+		input,select {
+			margin:10px 5px 0 20px;
+			border: 2px solid green;
+		}
+	    input:focus {
+	    	border: 2px solid magenta;
+            outline: none;
+	    }
+	    input:nth-of-type(2n){
+	    	border: 5px dotted blue;
+	    }	
+	    p::selection{
+	    	color:white;
+	    	background:purple;
+	    }
+	    h2 + p:first-letter{
+	    	font-size: 30px;
+	    	color:Magenta;
+	    }
+	    h1{
+	    	color: hsl(220,50%,50%);
+	    	background: hsl(220,60%,80%);
+	    	border: 1px solid hsl(220,100%,50%);
+	    	text-align:center;
+	    	padding:10px;
+	    }
+	    h1:hover{
+	    	color: hsl(220,60%,80%);
+	    	background: hsl(220,50%,50%);
+	    	border: 1px solid hsl(220,30%,80%);
+	    }
+	    h2{
+	    	color: hsl(340,50%,50%);
+	    	background: hsl(340,60%,80%);
+	    	border: 1px solid hsl(340,100%,50%);
+	    	text-align:center;
+	    	padding: 5px;
+	    }
+	    h2:hover{
+	    	color: hsl(340,60%,80%);
+	    	background: hsl(340,50%,50%);
+	    	border: 1px solid hsl(340,30%,80%);
+	    }
+	    h3 {
+	    	color:black;
+	    	font-family: cursive;
+            font-size: 88px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing:12px;
+            padding: 5px;
+            text-shadow: -5px 5px magenta, -10px 10px red, -15px 15px cyan, -20px 20px yellow;
+	    }
+	</style>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<p>Please fillup this form to register your account in my website.</p>
+	<h2>Random text</h2>
+	<h3>samprash</h3>
+	<p>This is a random text that i intend to select and download. This doesn't add value to this paragraph.</p>
+	<hr>
+	<form action="">
+
+	<div>
+		<label for="fname">Name:</label>
+		<input type="text" id="fname" placeholder="First Name" name="fname" required minlength=4>
+		<input type="text" name="lname" id="lname" placeholder="Last Name" required minlength="3">
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		<input type="email" id="email"  placeholder="you@something.com" required> 
+	</div>
+	<div>
+		<label for="country">Country:</label>
+		<select id="country">
+            <option value="">--choose a country--</option>
+			<option value="np">Nepal</option>
+			<option value="in">India</option>
+			<option value="af">Afganistan</option>
+			<option value="sl">Srilanka</option>
+			<option value="bl">Bangladesh</option>
+			<option value="bu">Bhutan</option>
+			<option value="md">Maldivs</option>
+
+		</select> 
+	</div>
+	<div>
+		<label for="phonenumber">Phone (+977)</label>
+		<input type="tel" id="phonenumber"  placeholder="98********" required maxlength="10"> 
+	</div>
+	<div>
+		<span>Choose Your Gender:</span>
+	    <input type="radio" id="male" name="gender">
+	    <label for="male">Male</label>
+	    <input type="radio" id="female" name="gender">
+	    <label for="female">Female</label>
+	    <input type="radio" id="other" name="gender">
+	    <label for="other">Other</label>
+	</div>
+	<div>
+		<span>Fields you're interested in:</span>
+		<input type="checkbox" id="bio" name="interest">
+		<label for="bio">Biological Science</label>
+		<input type="checkbox" id="phy" name="interest">
+		<label for="phy">Physical Science</label>
+		<input type="checkbox" id="engg" name="interest">
+		<label for="engg">Engineering-technology</label>
+		<input type="checkbox" id="cs" name="interest">
+		<label for="cs">Computer Science</label>
+	</div>
+         <input type="submit" value="submit">
+
+
+	</form>
+  
+</body>
+</html>
