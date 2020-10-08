@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: linear-gradient(135deg,#AA1428,gold,#000042);
 }
 .mycard{
     position: relative;
