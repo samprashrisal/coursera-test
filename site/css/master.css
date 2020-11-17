@@ -85,3 +85,11 @@ button:hover {
   background-color: #075AAB;
   color: beige;
 }
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: green;
+  list-style: none;
+}
