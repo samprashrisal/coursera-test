@@ -1,0 +1,146 @@
+body{
+    /* background-color: #ddd; */
+    transition: 2s background-color;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #777;
+    
+    width: 370px;
+    height: 500px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    position: relative;
+
+    text-align: center;
+    height: 350px;
+
+}
+.card-content h3{
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    padding: 0 ;
+    border-bottom: 1px solid #ddd;
+
+    color: #888;
+}
+
+.card-content #scoreDisplay{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.card-content h2{
+    font-weight: 500;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.card-content #score-limit{
+    margin: 20px 0;
+}
+.card-content .button-group{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+
+    display: flex;
+    width: 100%;
+}
+
+.button-group button{
+    width: 33.33%;
+    padding: 12px 0;
+    color: #fff;
+    border-radius: 10px;
+
+    letter-spacing: 1px;
+}
+
+#player-one{
+    background: rgb(18, 218, 68);
+    border: 1px solid rgb(103, 212, 130);
+}
+#player-one:hover{
+    background: rgb(14, 158, 50);
+    border: 1px solid rgb(80, 165, 101);
+}
+#player-two{
+    background: rgb(98, 70, 224);
+    border: 1px solid rgb(139, 162, 238);
+}
+#player-two:hover{
+    background: rgb(73, 52, 167);
+    border: 1px solid rgb(92, 107, 156);
+}
+#reset{
+    background: rgb(240, 30, 93);
+    border: 1px solid rgb(224, 113, 147);
+}
+#reset:hover{
+    background: rgb(160, 21, 63);
+    border: 1px solid rgb(150, 76, 98);
+}
+
+
+.imgbx{
+    width: 100%;
+}
+.imgbx img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#jokes{
+    position: relative;
+}
+#jokes ol{
+    position: absolute;
+    top: 0px;
+    left: 350px;
+}
+#jokes button{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+
+    background-color: rgb(25, 128, 56);
+    border: 1px solid rgb(51, 173, 67);
+
+    color: white;
+    outline: none;
+}
+#jokes button:hover{
+    background-color: rgb(37, 175, 79);
+    border: 1px solid rgb(70, 248, 94);
+}
+#jokes p{
+    width: 300px;
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border: 3px solid gold;
+    border-radius: 20px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Counter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                        alt="">
+                </div>
+                <div class="card-content">
+                    <h3>Ping Pong Score Keeper</h3>
+                    <div id="scoreDisplay">
+                        <span id='player1Score'>0</span>to <span id='player2Score'>0</span>
+                    </div>
+                    <h2>Use the button below to keep score</h2>
+                    <div id='score-limit'>
+                        <label for="limit">Playing To</label>
+                        <select name="limit" id="limit">
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                            <option value=11>11</option>
+                        </select>
+                    </div>
+                    <div class="button-group">
+                        <button id='player-one'>+1 Player One</button>
+                        <button id='player-two'>+1 Player Two</button>
+                        <button id='reset'>Reset</button>
+                    </div>
+                </div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id='jokes'>
+        <h1>My Dad Jokes</h1>
+        <p></p>
+        <button>Add new Joke</button>
+        <ol></ol>
+    </div>
+    <script src='app.js'></script>
+    <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
